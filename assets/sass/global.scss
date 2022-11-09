@@ -1,0 +1,9 @@
+//import utils
+@import "./utils/variables.scss"; 
+
+//import components
+@import "./components/heart.scss";
+
+//import page
+@import "./pages/home.scss";
+@import "./pages/restaurants.scss";
