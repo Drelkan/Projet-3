@@ -1,0 +1,23 @@
+{
+  "name": "projet-ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./assets/sass/global.scss:./assets/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Drelkan/Projet-3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Drelkan/Projet-3/issues"
+  },
+  "homepage": "https://github.com/Drelkan/Projet-3#readme",
+  "dependencies": {
+    "sass": "^1.56.1"
+  }
+}

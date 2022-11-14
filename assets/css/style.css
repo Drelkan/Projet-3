@@ -1,6 +1,8 @@
-header img{
-    width: 80%;
+.fonctionnement {
+  background-color: #9356DC;
 }
-.restaurant-card img{
-    width: 10%;
+.restaurants-cards .restaurant-card img {
+  width: 10%;
 }
+
+/*# sourceMappingURL=style.css.map */
