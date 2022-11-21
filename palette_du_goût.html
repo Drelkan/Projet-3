@@ -15,19 +15,29 @@
     <link rel="stylesheet" href="assets/CSS/Style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
-<body>
+<body class="marge">
     <header>
-        <a href="index.html">
-            <i class="fa-solid fa-arrow-left"></i>
-        </a>
-        <img src="assets/images/logo/ohmyfood.png" alt="#">
+        <div class="retour">
+            <a href="index.html">
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+        </div>
+        <div class="logo">
+            <img src="assets/images/logo/ohmyfood.png" alt="#">
+        </div>
     </header>
+    <div class="restaurant-image">
+        <img src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="#">
+    </div>
     <div class="general__contener">
         <section>
-            <h1>La palette du goût</h1>
-            <div class="heart__contener">
-                <i class="fa-regular fa-heart"></i>
-                <i class="fa-solid fa-heart"></i>
+            <div class="titre">
+                <h1>La palette du goût</h1>
+                <div class="heart__contener">
+                    <i class="fa-solid fa-heart full-heart">
+                        <i class="fa-regular fa-heart empty-heart"></i>
+                    </i>
+                </div>
             </div>
         </section>
         <section class="menu__contener">
@@ -35,7 +45,7 @@
                 <h2>ENTRÉES</h2>
                 <div class="entree__contener">
                     <div class="entree__card">
-                        <div class="entree__card__content">
+                        <div class="entree__card--content">
                             <h3>Fricassée d'escargorts</h3>
                             <p>Au piment d'Espelette</p>
                         </div>
@@ -47,7 +57,7 @@
                         </div>
                     </div>
                     <div class="entree__card">
-                        <div class="entree__card__content">
+                        <div class="entree__card--content">
                             <h3>Foie gras de canard mi-cuit</h3>
                             <p>Et ses copeaux de truffe noire</p>
                         </div>
@@ -59,7 +69,7 @@
                         </div>
                     </div>
                     <div class="entree__card">
-                        <div class="entree__card__content">
+                        <div class="entree__card--content">
                             <h3>Œuf au plat</h3>
                             <p>Assaisonné à la truffe sur le lit de...</p>
                         </div>
@@ -76,7 +86,7 @@
                 <h2>PLATS</h2>
                 <div class="plats__contener">
                     <div class="plats__card">
-                        <div class="plats__card__content">
+                        <div class="plats__card--content">
                             <h3>Filet de bœuf aux herbes</h3>
                             <p>Accompagné de sa ribambelle de légu...</p>
                         </div>
@@ -88,7 +98,7 @@
                         </div>
                     </div>
                     <div class="plats__card">
-                        <div class="plats__card__content">
+                        <div class="plats__card--content">
                             <h3>Parmentier de queue de bœuf</h3>
                             <p>À la truffe noire sur sa purée de panais</p>
                         </div>
@@ -100,7 +110,7 @@
                         </div>
                     </div>
                     <div class="plats__card">
-                        <div class="plats__card__content">
+                        <div class="plats__card--content">
                             <h3>Filet de turbot</h3>
                             <p>Aux agrumes</p>
                         </div>
@@ -117,7 +127,7 @@
                 <h2>DESSERTS</h2>
                 <div class="dessert__contener">
                     <div class="dessert__card">
-                        <div class="dessert__card__content">
+                        <div class="dessert__card--content">
                             <h3>Paris-Brest</h3>
                             <p>Revisité</p>
                         </div>
@@ -129,7 +139,7 @@
                         </div>
                     </div>
                     <div class="dessert__card">
-                        <div class="dessert__card-content">
+                        <div class="dessert__card--content">
                             <h3>Macaron au chocolat d'exception</h3>
                             <p>Et glace à la vanille de Madagascar</p>
                         </div>
@@ -141,7 +151,7 @@
                         </div>
                     </div>
                     <div class="dessert__card">
-                        <div class="dessert__card-content">
+                        <div class="dessert__card--content">
                             <h3>Mousse au chocolat</h3>
                             <p>Au piment d'Espelette et à la truffe noire</p>
                         </div>
@@ -156,7 +166,7 @@
             </div>
         </section>
         <div>
-            <a class="Commande-button" href="#">Commander</a>
+            <a class="button" href="#">Commander</a>
         </div>
     </div>
     <footer>

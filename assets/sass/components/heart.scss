@@ -1,0 +1,26 @@
+.heart__contener{
+    .full-heart{
+        font-size: 22px;
+        position: relative;
+        color: white;
+        transition: all 0.6s ease-in-out;
+        &:hover{
+            color: transparent;
+            background-image: $linear-gradient-heart;
+            background-clip: text;
+            transform: scale(1.1);
+            .empty-heart{
+                opacity: 0;
+                transform: scale(0.9);
+            }
+        }
+    }
+    .empty-heart{
+        position: absolute;
+        top: 0;
+        right: 0;
+        opacity: 1;
+        color: black;
+        transition: all 0.8s ease-in-out;
+    }
+}
