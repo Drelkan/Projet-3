@@ -1,0 +1,31 @@
+footer{
+    display : flex;
+    background-color: #2e2e2e;
+    padding: 30px 0px 30px 0px;
+    gap: 400px;
+}
+footer ul{
+    list-style: none;
+}
+footer, .footer{
+    color: white;
+}
+footer h3{
+    margin-left: 10%;
+    font-family: "Shrikhand",sans-serif;
+}
+footer ul{
+    margin: 10% 0% 0% -8%;
+}
+footer li{
+    padding-bottom: 5%;
+}
+footer a{
+    text-decoration: none;
+}
+footer i{
+    margin-right: 5%;
+}
+footer .fa-handshake-angle{
+    width: 7%;
+}
