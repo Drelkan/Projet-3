@@ -27,6 +27,13 @@
   background-color: white;
   margin-bottom: 15%;
 }
+.fonctionnement li:hover {
+  background-color: #f4ecfc;
+  border-color: 2px solid #f4ecfc;
+}
+.fonctionnement li:hover i {
+  color: #9356DC;
+}
 
 .fonctionnement h2 {
   margin: 15% 0% 8% 5%;
@@ -37,7 +44,6 @@
 }
 
 .fonctionnement li {
-  border: 1px solid white;
   margin: 5% 0% 0% -5%;
   width: 100%;
   border-radius: 20px;
@@ -53,7 +59,7 @@
   display: flex;
   justify-content: center;
   position: absolute;
-  border: 2px solid #9356DC;
+  border: 1px solid #9356DC;
   border-radius: 15px;
   width: 20px;
   background-color: #9356DC;
@@ -62,7 +68,10 @@
 }
 
 .fonctionnement i {
-  margin: 0% 10% 0% -10%;
+  margin: 0% 5% 0% -25%;
+}
+.fonctionnement i:hover {
+  color: #9356DC;
 }
 
 .restaurants__cards--content .restaurant__card {
@@ -96,6 +105,12 @@
   align-items: center;
   margin: 4% 0% 0% -28%;
 }
+.restaurants__cards--content .restaurant__card h3 {
+  margin: 2% 0% 0% 3%;
+}
+.restaurants__cards--content .restaurant__card p {
+  margin: 2% 0% 0% 3%;
+}
 .restaurants__cards--content .heart__contener {
   display: flex;
   justify-content: flex-end;
@@ -128,8 +143,19 @@
 
 .check {
   display: flex;
-  justify-content: end;
-  margin: -5% 0% 0% 0%;
+  margin: 0% 0% 0% 0%;
+  border: 1px solid #99e2d0;
+  width: 18%;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border-radius: 0% 20% 20% 0%;
+  background-color: #99e2d0;
+}
+
+.check i {
+  color: white;
+  font-size: 20px;
 }
 
 footer {
@@ -187,47 +213,70 @@ img {
   width: 50%;
 }
 
-.marge {
-  margin: 0%;
-}
-
-.search {
-  width: 98%;
-  height: 40px;
-  border: 1px solid #f2f2f2;
-  background-color: #e5e5e6;
-  margin-top: 3%;
-}
-
-.information {
-  border: 1px solid #f2f2f2;
-  background-color: #f4f4f4;
+.retour {
+  margin: 0% 0% 0% 120%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.information .button {
-  width: 55%;
-  height: 30px;
-  border-radius: 100px;
-  display: flex;
-  align-items: center;
-  margin: 10% 0% 15% 0%;
+  font-size: x-large;
+  position: relative;
+  text-decoration: none;
+  color: black;
 }
 
-.information h1 {
-  font-family: "Roboto", sans-serif;
-  margin: 10% 0% 2% 0%;
+@media screen and (max-width: 992px) {
+  body {
+    background-color: red;
+  }
 }
-
-.restaurant {
-  border: 1px solid white;
-  background-color: #f4f4f4;
-  margin-bottom: 10%;
+@media screen and (max-width: 767px) {
+  body {
+    background-color: white;
+  }
+  .marge {
+    margin: 0%;
+  }
+  .search-class {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border: 1px solid #f2f2f2;
+    background-color: #e5e5e6;
+    margin-top: 3%;
+  }
+  .information {
+    border: 1px solid #f2f2f2;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .information .button {
+    width: 55%;
+    height: 30px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    margin: 10% 0% 15% 0%;
+  }
+  .information h1 {
+    font-family: "Roboto", sans-serif;
+    margin: 10% 0% 2% 0%;
+    text-align: center;
+  }
+  .information p {
+    text-align: center;
+  }
+  .restaurant {
+    border: 1px solid white;
+    background-color: #f4f4f4;
+    padding-bottom: 50px;
+  }
+  .restaurant__titre {
+    margin: 12% 0% 8% 3%;
+  }
 }
-
-.restaurant__titre {
-  margin: 12% 0% 8% 3%;
+body {
+  background-color: white;
 }
 
 h1 {
@@ -292,7 +341,6 @@ h2, h3, p, a, span {
   margin-bottom: 20px;
   border: 1px solid white;
   border-radius: 20px;
-  width: 30%;
   background-color: #fcfcfc;
   -webkit-box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.16);
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.16);
@@ -301,14 +349,52 @@ h2, h3, p, a, span {
   min-height: 50px;
 }
 
-.entree__card--content, .plats__card--content, .dessert__card--content, h3, p {
-  margin: 2% 0% 0% 2%;
+.entree__card--content h3, .plats__card--content h3, .dessert__card--content h3, h3 h3, p h3 {
+  font-size: initial;
+  width: 100%;
+  margin: 0% 0% 0% 2%;
+  word-break: break-word;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.entree__card--content p, .plats__card--content p, .dessert__card--content p, h3 p, p p {
+  font-size: small;
+  width: 100%;
+  margin: 0% 0% 0% 2%;
+  word-break: break-word;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .entree__price, .plats__price, .dessert__price {
   display: flex;
+  position: relative;
+  font-size: initial;
   justify-content: end;
-  margin: -5% 7% 0% 0%;
+}
+
+.entree__contener .entree__card, .entree__contener .plats__card, .entree__contener .dessert__card, .plats__contener .entree__card, .plats__contener .plats__card, .plats__contener .dessert__card, .dessert__contener .entree__card, .dessert__contener .plats__card, .dessert__contener .dessert__card {
+  font-size: 22px;
+  position: relative;
+  transition: all 0.6s ease-in-out;
+}
+.entree__contener .entree__card .check, .entree__contener .plats__card .check, .entree__contener .dessert__card .check, .plats__contener .entree__card .check, .plats__contener .plats__card .check, .plats__contener .dessert__card .check, .dessert__contener .entree__card .check, .dessert__contener .plats__card .check, .dessert__contener .dessert__card .check {
+  opacity: 0;
+}
+.entree__contener .entree__card:hover, .entree__contener .plats__card:hover, .entree__contener .dessert__card:hover, .plats__contener .entree__card:hover, .plats__contener .plats__card:hover, .plats__contener .dessert__card:hover, .dessert__contener .entree__card:hover, .dessert__contener .plats__card:hover, .dessert__contener .dessert__card:hover {
+  background-clip: text;
+}
+.entree__contener .entree__card:hover .check, .entree__contener .plats__card:hover .check, .entree__contener .dessert__card:hover .check, .plats__contener .entree__card:hover .check, .plats__contener .plats__card:hover .check, .plats__contener .dessert__card:hover .check, .dessert__contener .entree__card:hover .check, .dessert__contener .plats__card:hover .check, .dessert__contener .dessert__card:hover .check {
+  opacity: 100;
+}
+.entree__contener .entree__card:hover .entree__price, .entree__contener .entree__card:hover .plats__price, .entree__contener .entree__card:hover .dessert__price span, .entree__contener .plats__card:hover .entree__price, .entree__contener .plats__card:hover .plats__price, .entree__contener .plats__card:hover .dessert__price span, .entree__contener .dessert__card:hover .entree__price, .entree__contener .dessert__card:hover .plats__price, .entree__contener .dessert__card:hover .dessert__price span, .plats__contener .entree__card:hover .entree__price, .plats__contener .entree__card:hover .plats__price, .plats__contener .entree__card:hover .dessert__price span, .plats__contener .plats__card:hover .entree__price, .plats__contener .plats__card:hover .plats__price, .plats__contener .plats__card:hover .dessert__price span, .plats__contener .dessert__card:hover .entree__price, .plats__contener .dessert__card:hover .plats__price, .plats__contener .dessert__card:hover .dessert__price span, .dessert__contener .entree__card:hover .entree__price, .dessert__contener .entree__card:hover .plats__price, .dessert__contener .entree__card:hover .dessert__price span, .dessert__contener .plats__card:hover .entree__price, .dessert__contener .plats__card:hover .plats__price, .dessert__contener .plats__card:hover .dessert__price span, .dessert__contener .dessert__card:hover .entree__price, .dessert__contener .dessert__card:hover .plats__price, .dessert__contener .dessert__card:hover .dessert__price span {
+  color: red;
+  margin: 0% 20% 10% 0%;
+}
+.entree__contener .entree__card:hover p, .entree__contener .plats__card:hover p, .entree__contener .dessert__card:hover p, .plats__contener .entree__card:hover p, .plats__contener .plats__card:hover p, .plats__contener .dessert__card:hover p, .dessert__contener .entree__card:hover p, .dessert__contener .plats__card:hover p, .dessert__contener .dessert__card:hover p {
+  width: 88%;
 }
 
 /*# sourceMappingURL=style.css.map */

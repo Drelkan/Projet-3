@@ -1,3 +1,6 @@
+body{
+    background-color: white;
+}
 h1{
     font-family: "Shrikhand",sans-serif;
 }
@@ -49,7 +52,6 @@ h2,h3,p,a, span{
     margin-bottom: 20px;
     border: 1px solid white;
     border-radius: 20px;
-    width: 30%;
     background-color: #fcfcfc;
     -webkit-box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.16); 
     box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.16);
@@ -58,10 +60,51 @@ h2,h3,p,a, span{
     min-height: 50px;
 }
 .entree__card--content, .plats__card--content, .dessert__card--content, h3, p{
-    margin: 2% 0% 0% 2%;
+    h3{
+        font-size: initial;
+        width: 100%;
+        margin: 0% 0% 0% 2%;
+        word-break: break-word;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;        
+    }
+    p{
+        font-size: small;
+        width: 100%;
+        margin: 0% 0% 0% 2%;
+        word-break: break-word;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;        
+    }
 }
 .entree__price, .plats__price, .dessert__price{
     display: flex;
+    position: relative;
+    font-size: initial;
     justify-content: end;
-    margin: -5% 7% 0% 0%;
+}
+.entree__contener, .plats__contener, .dessert__contener{
+    .entree__card, .plats__card, .dessert__card{
+        font-size: 22px;
+        position: relative;
+        transition: all 0.6s ease-in-out;
+        .check{
+            opacity: 0;
+        }
+        &:hover{
+            background-clip: text;
+            .check{
+                opacity: 100;
+            }
+            .entree__price, .plats__price, .dessert__price span{
+                color: red;
+                margin: 0% 20% 10% 0%;
+            }
+            p{
+                width: 88%;
+            }
+        }
+    }
 }

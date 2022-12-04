@@ -1,5 +1,16 @@
 .check{
     display: flex;
-    justify-content: end;
-    margin: -5% 0% 0% 0%;
+    margin: 0% 0% 0% 0%;
+    border: 1px solid $tertiaire-color;
+    width: 18%;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border-radius: 0% 20% 20% 0%;
+    background-color: $tertiaire-color;
+}
+.check i{
+    color: white;
+    font-size: 20px;
+
 }
