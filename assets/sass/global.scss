@@ -2,11 +2,13 @@
 @import "./utils/variables.scss"; 
 
 //import components
+@import "./components/information.scss";
 @import "./components/heart.scss";
 @import "./components/fonctionnement.scss";
 @import "./components/restaurant-card.scss";
 @import "./components/button.scss";
 @import "./components/check.scss";
+@import "./components/menu.scss";
 //import layout
 @import "./layout/footer.scss";
 @import "./layout/header.scss";

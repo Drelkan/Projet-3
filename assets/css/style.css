@@ -1,3 +1,32 @@
+.information {
+  border: 1px solid #f2f2f2;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.information .button {
+  width: 55%;
+  height: 30px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  margin: 10% 0% 15% 0%;
+}
+
+.information h1 {
+  font-family: "Roboto", sans-serif;
+  margin: 10% 0% 2% 0%;
+  text-align: center;
+}
+
+.information p {
+  text-align: center;
+}
+
+.heart__contener {
+  margin-left: 15%;
+}
 .heart__contener .full-heart {
   font-size: 22px;
   position: relative;
@@ -74,6 +103,16 @@
   color: #9356DC;
 }
 
+.restaurant {
+  border: 1px solid white;
+  background-color: #f4f4f4;
+  padding-bottom: 50px;
+}
+
+.restaurant__titre {
+  margin: 12% 0% 8% 3%;
+}
+
 .restaurants__cards--content .restaurant__card {
   display: block;
   width: 93%;
@@ -130,7 +169,7 @@
   background-image: linear-gradient(180deg, #ff79da 0%, #9356DC 95%);
   padding: 10px 15px;
   display: inline-block;
-  width: 120px;
+  width: 80%;
   display: flex;
   justify-content: center;
   -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.43);
@@ -143,7 +182,6 @@
 
 .check {
   display: flex;
-  margin: 0% 0% 0% 0%;
   border: 1px solid #99e2d0;
   width: 18%;
   align-items: center;
@@ -156,6 +194,151 @@
 .check i {
   color: white;
   font-size: 20px;
+}
+
+.menu__contener {
+  margin: 3%;
+}
+
+.menu__contener h2 {
+  border-bottom: 2px solid #99e2d0;
+  padding-top: 2%;
+  text-align: center;
+  width: 70px;
+}
+
+.entrees {
+  margin: -5% 0% 10% 0%;
+}
+
+.plats {
+  margin: 0% 0% 10% 0%;
+}
+
+.entree__price, .plats__price, .dessert__price {
+  display: flex;
+  position: relative;
+  font-size: initial;
+  justify-content: end;
+  width: 20%;
+}
+.entree__price span, .plats__price span, .dessert__price span {
+  display: inline-block;
+}
+
+.entree__card, .plats__card, .dessert__card {
+  color: black;
+  text-decoration: none;
+  margin-bottom: 20px;
+  border: 1px solid white;
+  border-radius: 20px;
+  background-color: #fcfcfc;
+  -webkit-box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.16);
+  width: 100%;
+  height: 70px;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.entree__card--content, .plats__card--content, .dessert__card--content {
+  padding-left: 10px;
+  width: 80%;
+}
+.entree__card--content h3, .plats__card--content h3, .dessert__card--content h3 {
+  font-size: initial;
+  width: 100%;
+  margin: 0% 0% 0% 2%;
+  word-break: break-word;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.entree__card--content p, .plats__card--content p, .dessert__card--content p {
+  font-size: small;
+  width: 100%;
+  margin: 0% 0% 0% 2%;
+  word-break: break-word;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.dessert__contener .dessert__card {
+  font-size: 22px;
+  position: relative;
+  transition: all 1s ease-in-out;
+}
+.dessert__contener .dessert__card .check {
+  opacity: 0;
+  width: 0%;
+  transition: all 0.8s ease-in-out;
+}
+.dessert__contener .dessert__card:hover .entree__card--content {
+  width: 50%;
+}
+.dessert__contener .dessert__card:hover .check {
+  opacity: 100;
+  width: 18%;
+}
+.dessert__contener .dessert__card:hover .check i {
+  animation: rotate 1s ease-in-out both;
+}
+.dessert__contener .dessert__card:hover .dessert__price span {
+  color: red;
+  width: 20%;
+}
+
+.entree__contener .entree__card {
+  font-size: 22px;
+  position: relative;
+  transition: all 1s ease-in-out;
+}
+.entree__contener .entree__card .check {
+  opacity: 0;
+  width: 0%;
+  transition: all 0.8s ease-in-out;
+}
+.entree__contener .entree__card:hover .entree__card--content {
+  width: 50%;
+}
+.entree__contener .entree__card:hover .check {
+  opacity: 100;
+  width: 18%;
+}
+.entree__contener .entree__card:hover .check i {
+  animation: rotate 1s ease-in-out both;
+}
+.entree__contener .entree__card:hover .entree__price span {
+  color: red;
+  width: 20%;
+}
+
+.plats__contener .plats__card {
+  font-size: 22px;
+  position: relative;
+  transition: all 1s ease-in-out;
+}
+.plats__contener .plats__card .check {
+  opacity: 0;
+  width: 0%;
+  transition: all 0.8s ease-in-out;
+}
+.plats__contener .plats__card:hover .entree__card--content {
+  width: 50%;
+}
+.plats__contener .plats__card:hover .check {
+  opacity: 100;
+  width: 18%;
+}
+.plats__contener .plats__card:hover .check i {
+  animation: rotate 1s ease-in-out both;
+}
+.plats__contener .plats__card:hover .plats__price span {
+  color: red;
+  width: 20%;
 }
 
 footer {
@@ -222,12 +405,12 @@ img {
   color: black;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 992px) {
   body {
     background-color: red;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 576px) {
   body {
     background-color: white;
   }
@@ -243,37 +426,6 @@ img {
     background-color: #e5e5e6;
     margin-top: 3%;
   }
-  .information {
-    border: 1px solid #f2f2f2;
-    background-color: #f4f4f4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .information .button {
-    width: 55%;
-    height: 30px;
-    border-radius: 100px;
-    display: flex;
-    align-items: center;
-    margin: 10% 0% 15% 0%;
-  }
-  .information h1 {
-    font-family: "Roboto", sans-serif;
-    margin: 10% 0% 2% 0%;
-    text-align: center;
-  }
-  .information p {
-    text-align: center;
-  }
-  .restaurant {
-    border: 1px solid white;
-    background-color: #f4f4f4;
-    padding-bottom: 50px;
-  }
-  .restaurant__titre {
-    margin: 12% 0% 8% 3%;
-  }
 }
 body {
   background-color: white;
@@ -287,11 +439,8 @@ h2, h3, p, a, span {
   font-family: "Roboto", sans-serif;
 }
 
-.menu__contener h2 {
-  border-bottom: 2px solid #99e2d0;
-  padding-top: 2%;
-  text-align: center;
-  width: 70px;
+.marge {
+  margin: 0%;
 }
 
 .restaurant-image img {
@@ -319,82 +468,13 @@ h2, h3, p, a, span {
   margin-left: 3%;
 }
 
-.heart__contener {
-  margin-left: 15%;
-}
-
-.menu__contener {
-  margin: 3%;
-}
-
-.entrees {
-  margin: -5% 0% 10% 0%;
-}
-
-.plats {
-  margin: 0% 0% 10% 0%;
-}
-
-.entree__card, .plats__card, .dessert__card {
-  color: black;
-  text-decoration: none;
-  margin-bottom: 20px;
-  border: 1px solid white;
-  border-radius: 20px;
-  background-color: #fcfcfc;
-  -webkit-box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.16);
-  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.16);
-  width: 100%;
-  height: 70px;
-  min-height: 50px;
-}
-
-.entree__card--content h3, .plats__card--content h3, .dessert__card--content h3, h3 h3, p h3 {
-  font-size: initial;
-  width: 100%;
-  margin: 0% 0% 0% 2%;
-  word-break: break-word;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-.entree__card--content p, .plats__card--content p, .dessert__card--content p, h3 p, p p {
-  font-size: small;
-  width: 100%;
-  margin: 0% 0% 0% 2%;
-  word-break: break-word;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.entree__price, .plats__price, .dessert__price {
-  display: flex;
-  position: relative;
-  font-size: initial;
-  justify-content: end;
-}
-
-.entree__contener .entree__card, .entree__contener .plats__card, .entree__contener .dessert__card, .plats__contener .entree__card, .plats__contener .plats__card, .plats__contener .dessert__card, .dessert__contener .entree__card, .dessert__contener .plats__card, .dessert__contener .dessert__card {
-  font-size: 22px;
-  position: relative;
-  transition: all 0.6s ease-in-out;
-}
-.entree__contener .entree__card .check, .entree__contener .plats__card .check, .entree__contener .dessert__card .check, .plats__contener .entree__card .check, .plats__contener .plats__card .check, .plats__contener .dessert__card .check, .dessert__contener .entree__card .check, .dessert__contener .plats__card .check, .dessert__contener .dessert__card .check {
-  opacity: 0;
-}
-.entree__contener .entree__card:hover, .entree__contener .plats__card:hover, .entree__contener .dessert__card:hover, .plats__contener .entree__card:hover, .plats__contener .plats__card:hover, .plats__contener .dessert__card:hover, .dessert__contener .entree__card:hover, .dessert__contener .plats__card:hover, .dessert__contener .dessert__card:hover {
-  background-clip: text;
-}
-.entree__contener .entree__card:hover .check, .entree__contener .plats__card:hover .check, .entree__contener .dessert__card:hover .check, .plats__contener .entree__card:hover .check, .plats__contener .plats__card:hover .check, .plats__contener .dessert__card:hover .check, .dessert__contener .entree__card:hover .check, .dessert__contener .plats__card:hover .check, .dessert__contener .dessert__card:hover .check {
-  opacity: 100;
-}
-.entree__contener .entree__card:hover .entree__price, .entree__contener .entree__card:hover .plats__price, .entree__contener .entree__card:hover .dessert__price span, .entree__contener .plats__card:hover .entree__price, .entree__contener .plats__card:hover .plats__price, .entree__contener .plats__card:hover .dessert__price span, .entree__contener .dessert__card:hover .entree__price, .entree__contener .dessert__card:hover .plats__price, .entree__contener .dessert__card:hover .dessert__price span, .plats__contener .entree__card:hover .entree__price, .plats__contener .entree__card:hover .plats__price, .plats__contener .entree__card:hover .dessert__price span, .plats__contener .plats__card:hover .entree__price, .plats__contener .plats__card:hover .plats__price, .plats__contener .plats__card:hover .dessert__price span, .plats__contener .dessert__card:hover .entree__price, .plats__contener .dessert__card:hover .plats__price, .plats__contener .dessert__card:hover .dessert__price span, .dessert__contener .entree__card:hover .entree__price, .dessert__contener .entree__card:hover .plats__price, .dessert__contener .entree__card:hover .dessert__price span, .dessert__contener .plats__card:hover .entree__price, .dessert__contener .plats__card:hover .plats__price, .dessert__contener .plats__card:hover .dessert__price span, .dessert__contener .dessert__card:hover .entree__price, .dessert__contener .dessert__card:hover .plats__price, .dessert__contener .dessert__card:hover .dessert__price span {
-  color: red;
-  margin: 0% 20% 10% 0%;
-}
-.entree__contener .entree__card:hover p, .entree__contener .plats__card:hover p, .entree__contener .dessert__card:hover p, .plats__contener .entree__card:hover p, .plats__contener .plats__card:hover p, .plats__contener .dessert__card:hover p, .dessert__contener .entree__card:hover p, .dessert__contener .plats__card:hover p, .dessert__contener .dessert__card:hover p {
-  width: 88%;
+@keyframes rotate {
+  40% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

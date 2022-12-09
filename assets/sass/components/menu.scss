@@ -1,0 +1,165 @@
+.menu__contener{
+    margin: 3%;
+}
+.menu__contener h2{
+    border-bottom: 2px solid $tertiaire-color;
+    padding-top: 2%;
+    text-align: center;
+    width: 70px;
+}
+.entrees{
+    margin: -5% 0% 10% 0%;
+}
+.plats{
+    margin: 0% 0% 10% 0%;
+}
+.entree__price, .plats__price, .dessert__price{
+    display: flex;
+    position: relative;
+    font-size: initial;
+    justify-content: end;
+    width: 20%;
+    span{
+        display: inline-block;
+    }
+}
+.entree__card, .plats__card, .dessert__card{
+    color: black;
+    text-decoration: none;
+    margin-bottom: 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: #fcfcfc;
+    -webkit-box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.16); 
+    box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.16);
+    width: 100%;
+    height: 70px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.entree__card--content, .plats__card--content, .dessert__card--content{
+    padding-left: 10px;
+    width: 80%;
+    h3{
+        font-size: initial;
+        width: 100%;
+        margin: 0% 0% 0% 2%;
+        word-break: break-word;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;        
+    }
+    p{
+        font-size: small;
+        width: 100%;
+        margin: 0% 0% 0% 2%;
+        word-break: break-word;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;        
+    }
+}
+.dessert__contener{
+    .dessert__card{
+        font-size: 22px;
+        position: relative;
+        transition: all 1s ease-in-out;
+        .check{
+            opacity: 0;
+            width: 0%;
+            transition: all 0.8s ease-in-out;
+
+        }
+        &:hover{
+            .entree__card--content{
+                width: 50%;
+            }
+
+            .check{
+                opacity: 100;
+                width: 18%;
+                i{
+                   animation: rotate 1s ease-in-out both; 
+                }
+                
+            }
+            .dessert__price span{
+                color: red;
+                width: 20%;
+            }
+            // p{
+            //     width: 88%;
+            // }
+        }
+    }
+}
+.entree__contener{
+    .entree__card{
+        font-size: 22px;
+        position: relative;
+        transition: all 1s ease-in-out;
+        .check{
+            opacity: 0;
+            width: 0%;
+            transition: all 0.8s ease-in-out;
+
+        }
+        &:hover{
+            .entree__card--content{
+                width: 50%;
+            }
+
+            .check{
+                opacity: 100;
+                width: 18%;
+                i{
+                   animation: rotate 1s ease-in-out both; 
+                }
+                
+            }
+            .entree__price span{
+                color: red;
+                width: 20%;
+            }
+            // p{
+            //     width: 88%;
+            // }
+        }
+    }
+}
+.plats__contener{
+    .plats__card{
+        font-size: 22px;
+        position: relative;
+        transition: all 1s ease-in-out;
+        .check{
+            opacity: 0;
+            width: 0%;
+            transition: all 0.8s ease-in-out;
+
+        }
+        &:hover{
+            .entree__card--content{
+                width: 50%;
+            }
+
+            .check{
+                opacity: 100;
+                width: 18%;
+                i{
+                   animation: rotate 1s ease-in-out both; 
+                }
+                
+            }
+            .plats__price span{
+                color: red;
+                width: 20%;
+            }
+            // p{
+            //     width: 88%;
+            // }
+        }
+    }
+}
