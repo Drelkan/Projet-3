@@ -1,3 +1,21 @@
+@media screen and (max-width:575px){
+    body{
+        background-color: white;
+    }
+    .marge{
+        margin: 0%;
+    }
+}
+
+
+@media screen and (min-width:576px){
+    .marge{
+        margin: 0%;
+    }
+
+}
+
+
 @media screen and (min-width:992px){
     body{
         background-color: red;
@@ -5,20 +23,3 @@
 }
 
 
-@media screen and (min-width:576px){
-    body{
-        background-color: white;
-    }
-    .marge{
-        margin: 0%;
-    }
-    .search-class{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 40px;
-        border: 1px solid #f2f2f2;
-        background-color: #e5e5e6;
-        margin-top: 3%;
-    }
-}
