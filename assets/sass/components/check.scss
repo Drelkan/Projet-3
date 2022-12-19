@@ -1,32 +1,13 @@
-@media screen and (max-width:575px){
-    .check{
-        display: flex;
-        border: 1px solid $tertiaire-color;
-        width: 18%;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        border-radius: 0% 20% 20% 0%;
-        background-color: $tertiaire-color;
-    }
-    .check i{
-        color: white;
-        font-size: 20px;
-    }
-}
-
-@media screen and (min-width:576px){
-    .check{
-        display: flex;
-        border: 1px solid $tertiaire-color;
-        width: 18%;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        border-radius: 0px 20px 20px 0px;
-        background-color: $tertiaire-color;
-    }
-    .check i{
+.check{
+    display: flex;
+    border: 1px solid $tertiaire-color;
+    width: 18%;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border-radius: 0% 20% 20% 0%;
+    background-color: $tertiaire-color;
+    i{
         color: white;
         font-size: 20px;
     }

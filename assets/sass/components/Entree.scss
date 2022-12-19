@@ -1,0 +1,69 @@
+.entree__contener{
+    .entree__card{
+        font-size: 22px;
+        position: relative;
+        transition: all 2s ease-in-out;
+        animation: appear 2s ease-in-out;
+        .check{
+            opacity: 0;
+            width: 0%;
+            transition: all 0.8s ease-in-out;
+        }
+        .entree__price{
+            span{
+                transition: all 1.4s ease-in-out;
+                margin: 30% 15% 0% 0%;
+            }
+        }
+
+        &:hover{
+            .entree__card--content{
+                width: 60%;
+            }
+            .check{
+                opacity: 100;
+                width: 17%;
+                i{
+                animation: rotate 1s ease-in-out both; 
+                }
+            }
+            .entree__price{
+            width: 0%;
+                span{
+                    width: 20%;
+                    margin: 30px 20px 0px 0%;
+                    transition: all 1.5s ease-in-out;
+                }
+            }
+            // p{
+            //     width: 88%;
+            // }
+        }
+    }
+}
+
+
+@media screen and (min-width:576px){
+    .entree{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .entree__contener{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            justify-content: space-around;
+        }
+    }
+    .entree__card{
+        width: 45%;
+        height: 75px;
+        &:hover{
+            .entree__card{
+                width: 125%;
+                height: 75px;       
+                // a revoir
+            }
+        }
+    }
+}

@@ -1,22 +1,13 @@
-@media screen and (max-width:575px){
-    .fonctionnement{
-        background-color: white;
-        margin-bottom: 15%;
-            li:hover{
-                background-color: #f4ecfc;
-                border-color: 2px solid #f4ecfc;   
-                i{
-                    color: $primary-color;
-                }     
-            }
-    }
-    .fonctionnement h2{
+.fonctionnement{
+    background-color: white;
+    margin-bottom: 15%;
+    h2{
         margin: 15% 0% 8% 5%;
     }
-    .fonctionnement ul{
+    ul{
         list-style: none;
     }
-    .fonctionnement li{
+    li{
         margin: 5% 0% 0% -5%;
         width: 100%;
         border-radius: 20px;
@@ -27,7 +18,7 @@
         -webkit-box-shadow: 0px 5px 20px 4px rgba(0,0,0,0.15); 
         box-shadow: 0px 5px 20px 4px rgba(0,0,0,0.15);
     }
-    .fonctionnement span{
+    span{
         display: flex;
         justify-content: center;
         position: absolute;
@@ -38,17 +29,70 @@
         color: white;
         margin-left: -90%;
     }
-    .fonctionnement i{
+    i{
         margin: 0% 5% 0% -25%;
             &:hover{
                 color: $primary-color;
             }
     }
+        li:hover{
+            background-color: #f4ecfc;
+            border-color: 2px solid #f4ecfc;   
+            i{
+                color: $primary-color;
+            }     
+        }
 }
+
 
 @media screen and (min-width:576px){
     .fonctionnement{
         background-color: white;
+        margin-bottom: 15%;
+        h2{
+            display: flex;
+            justify-content: center;
+            font-size: 55px;
+            margin: 5% 0% 0% 0%;
+        }
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+        }
+        li{
+            margin: 5% 5% 0% 0%;
+            width: 40%;
+            border-radius: 20px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            -webkit-box-shadow: 0px 5px 20px 4px rgba(0,0,0,0.15); 
+            box-shadow: 0px 5px 20px 4px rgba(0,0,0,0.15);
+        }
+        span{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            border: 1px solid $primary-color;
+            border-radius: 15px;
+            width: 30px;
+            height: 30px;
+            background-color: $primary-color;
+            color: white;
+            margin-left: -38%;
+        }
+        i{
+            position: absolute;
+            margin-left: -23%;
+                &:hover{
+                    color: $primary-color;
+                }
+        }
+    }
             li:hover{
                 background-color: #f4ecfc;
                 border-color: 2px solid #f4ecfc;   
@@ -57,50 +101,19 @@
                 }     
             }
     }
-    .fonctionnement h2{
-        display: flex;
-        justify-content: center;
-        font-size: 55px;
-        padding-top: 5%;
-        margin-bottom: 0%;
-    }
-    .fonctionnement ul{
-        list-style: none;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-content: center;
-        padding-bottom: 5%;
-    }
-    .fonctionnement li{
-        margin: 5% 0% 0% 0%;
-        width: 50%;
-        border-radius: 20px;
-        height: 60px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        -webkit-box-shadow: 0px 5px 20px 4px rgba(0,0,0,0.15); 
-        box-shadow: 0px 5px 20px 4px rgba(0,0,0,0.15);
-    }
-    .fonctionnement span{
-        display: flex;
-        justify-content: center;
-        position: absolute;
-        border: 1px solid $primary-color;
-        border-radius: 15px;
-        width: 30px;
-        height: 30px;
-        background-color: $primary-color;
-        color: white;
-        margin-left: -47%;
-        align-items: center;
-    }
-    .fonctionnement i{
-        position: absolute;
-        margin-left: -30%;
-            &:hover{
-                color: $primary-color;
-            }
+
+
+@media screen and (min-width:992px){
+    .fonctionnement{
+        margin-bottom: 10%;
+        li{
+            width: 25%;
+        }
+        span{
+            margin-left: -24.5%;
+        }
+        i{
+            margin-left: -10%;
+        }
     }
 }

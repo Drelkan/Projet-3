@@ -1,136 +1,67 @@
-@media screen and (max-width:575px){
-    body{
-        background-color: white;
-    }
-    h1{
-        font-family: "Shrikhand",sans-serif;
-    }
-    h2,h3,p,a, span{
-        font-family: "Roboto",sans-serif;
-    }
-    .marge{
-        margin: 0%;
-    }
-    .restaurant-image img{
-        width: 100%;
-        margin-top: 3%;
-        margin-bottom: -4%;
-    }
+
+body{
+    background-color: white;
+}
+h1{
+    font-family: "Shrikhand",sans-serif;
+}
+h2,h3,p,a, span{
+    font-family: "Roboto",sans-serif;
+}
+.marge{
+    margin: 0%;
     .general__contener{
         border: 1px solid white;
         border-radius: 25px;
         background-color: white;
         position: absolute;
         margin-top: -4%;
-        width: 99%;
+        width: 100%;
     }
-    .titre{
-        display: flex;
-        align-items:center;
-        margin-top: 3%;
+}
+.restaurant-image img{
+    width: 100%;
+    margin-top: 3%;
+    margin-bottom: -4%;
+}
+.titre{
+    display: flex;
+    align-items:center;
+    margin-top: 3%;
+    h1{
+           margin-left: 3%;
     }
-    .titre h1{
-        margin-left: 3%;
+}
+@keyframes rotate{
+    40%{
+        transform: rotate(-90deg);
     }
-    @keyframes rotate{
-        40%{
-            transform: rotate(-90deg);
-        }
-        100%{
-            transform: rotate(1turn);
-        }
+    100%{
+        transform: rotate(1turn);
     }
 }
 
+
 @media screen and (min-width:576px){
-    body{
-        background-color: white;
-    }
-    h1{
-        font-family: "Shrikhand",sans-serif;
-    }
-    h2,h3,p,a, span{
-        font-family: "Roboto",sans-serif;
-    }
-    .marge{
-        margin: 0%;
-    }
-    .restaurant-image img{
-        width: 100%;
-        margin-top: 3%;
-        margin-bottom: -4%;
-    }
-    .general__contener{
-        border: 1px solid white;
-        border-radius: 25px;
-        background-color: white;
-        position: absolute;
-        margin-top: -4%;
-        width: 99%;
-    }
     .titre{
         display: flex;
-        align-items:center;
-        margin-top: 3%;
         justify-content: center;
         font-size: 30px;
-    }
-    .titre h1{
-        margin-left: 3%;
-    }
-    @keyframes rotate{
-        40%{
-            transform: rotate(-90deg);
-        }
-        100%{
-            transform: rotate(1turn);
-        }
     }
 }
+
+
 @media screen and (min-width:992px){
-    body{
-        background-color: white;
-    }
-    h1{
-        font-family: "Shrikhand",sans-serif;
-    }
-    h2,h3,p,a, span{
-        font-family: "Roboto",sans-serif;
-    }
-    .marge{
-        margin: 0%;
-    }
     .restaurant-image img{
-        width: 100%;
-        margin-top: 3%;
-        margin-bottom: -4%;
-        height: 400px;
         object-fit: none;
     }
-    .general__contener{
-        border: 1px solid white;
-        border-radius: 25px;
-        background-color: white;
-        position: absolute;
-        margin-top: -4%;
-        width: 99%;
-    }
-    .titre{
-        display: flex;
-        align-items:center;
-        margin-top: 3%;
-        justify-content: center;
-        font-size: 30px;
-    }
-    .titre h1{
-        margin-left: 3%;
-    }
-    @keyframes rotate{
-        40%{
-            transform: rotate(-90deg);
-        }
-        100%{
-            transform: rotate(1turn);
+    .marge{
+        .general{
+            display: flex;
+            justify-content: center;
+            &__contener{
+                width: 70%;
+            }    
         }
     }
 }

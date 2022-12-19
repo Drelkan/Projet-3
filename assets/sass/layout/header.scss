@@ -44,5 +44,11 @@
         text-decoration: none;
         color: black;
     }  
-    
+}
+
+
+@media screen and (min-width:992px){
+    img{
+        width: 100%;
+    }
 }

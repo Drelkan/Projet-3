@@ -1,13 +1,17 @@
-@media screen and (max-width:575px){
+.loader__contener{
+    animation: disappear 4s forwards;
     .loader {
         width: 48px;
         height: 48px;
-        border: 5px solid #FFF;
+        border: 5px solid grey;
         border-bottom-color: transparent;
         border-radius: 50%;
         display: inline-block;
         box-sizing: border-box;
-        animation: rotation 1s linear infinite;
+        animation: rotation 4s linear forwards;
+        position: absolute;
+        top: 20%;
+        left: 43%;
         }
     
         @keyframes rotation {
@@ -18,4 +22,52 @@
             transform: rotate(360deg);
         }
     } 
+}
+
+.loading__content{
+    opacity: 0;
+    animation: appear 4s forwards;
+}
+
+
+@keyframes appear{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes disappear{
+    0%{
+        opacity: 1;
+        display: block;
+    }
+    100%{
+        opacity: 0;
+        display: none;
+    }
+}
+
+
+@media screen and (min-width:576px){
+    .loader__contener{
+        .loader {
+            height: 6%;
+            width: 10%;
+            position: absolute;
+            left: 46%;
+            }    
+    }
+}
+
+
+@media screen and (min-width:992px){
+    .loader__contener{
+        .loader{
+            height: 20%;
+            top: 40%;
+        }
+    }
 }
