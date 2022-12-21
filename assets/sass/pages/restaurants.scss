@@ -10,17 +10,32 @@ h2,h3,p,a, span{
 }
 .marge{
     margin: 0%;
+    .general{
+        position: absolute;
+        width: 100%;
+    }
     .general__contener{
         border: 1px solid white;
         border-radius: 25px;
         background-color: white;
-        position: absolute;
         margin-top: -4%;
-        width: 100%;
+        width: 99.5%;
     }
 }
-.restaurant-image img{
+.restaurant-image{
+    position: relative;
+    img{
     width: 100%;
+    height: 240px;
+    margin-top: 3%;
+    margin-bottom: -4%;
+    object-fit: cover;
+    }
+}
+
+.restaurant-image-note-enchantee img{
+    width: 100%;
+    height: 240px;
     margin-top: 3%;
     margin-bottom: -4%;
 }
@@ -48,19 +63,30 @@ h2,h3,p,a, span{
         justify-content: center;
         font-size: 30px;
     }
+    .restaurant-image-note-enchantee img{
+        height: 235px;
+    }
 }
 
 
 @media screen and (min-width:992px){
     .restaurant-image img{
         object-fit: none;
+        max-height: 120%;
+        height: 120%;
     }
     .marge{
+        display: flex;
+         flex-direction: column;
         .general{
             display: flex;
             justify-content: center;
+            align-items: end;
             &__contener{
                 width: 70%;
+                .titre{
+                    height: 85px;
+                }
             }    
         }
     }

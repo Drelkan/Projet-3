@@ -12,7 +12,9 @@
         .plats__price{
             span{
                 transition: all 1.4s ease-in-out;
-                margin: 30% 15% 0% 0%;
+                position: absolute;
+                top: 5px;
+                right: 15px;
             }
         }
 
@@ -31,8 +33,10 @@
                 width: 0%;
                 span{
                     width: 20%;
-                    margin: 30px 20px 0px 0%;
                     transition: all 1.5s ease-in-out;
+                    position: absolute;
+                    top: 5px;
+                    right: 20px;
                 }
             }
             // p{

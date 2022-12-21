@@ -114,6 +114,7 @@
 }
 .fonctionnement i {
   margin: 0% 5% 0% -25%;
+  color: #7e7e7e;
 }
 .fonctionnement i:hover {
   color: #9356DC;
@@ -311,6 +312,9 @@
   }
 }
 @media screen and (min-width: 992px) {
+  .restaurant {
+    margin-bottom: -10%;
+  }
   .restaurants__cards--content {
     display: flex;
     flex-wrap: wrap;
@@ -445,6 +449,12 @@
   }
 }
 @media screen and (min-width: 992px) {
+  .menu__contener {
+    margin: 0%;
+  }
+  .button__commande .button__contener {
+    margin: 5% 0% 5% 0%;
+  }
   .button__commande .button {
     width: 40%;
     height: 60px;
@@ -456,21 +466,23 @@
     align-items: center;
   }
 }
-@media screen and (max-width: 575px) {
-  .search-class {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-    border: 1px solid #f2f2f2;
-    background-color: #e5e5e6;
-    margin-top: 3%;
-  }
-  .search-class .search {
-    background-color: #e5e5e6;
-    border: none;
-  }
+.search-class {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  border: 1px solid #f2f2f2;
+  background-color: #e5e5e6;
+  margin-top: 3%;
+  gap: 5%;
+  padding-left: 20%;
 }
+.search-class .search {
+  background-color: #e5e5e6;
+  border: none;
+  font-size: 15px;
+}
+
 @media screen and (min-width: 576px) {
   .search__contener {
     display: flex;
@@ -491,6 +503,12 @@
   .search__contener .search-class .search {
     background-color: #e5e5e6;
     border: none;
+  }
+}
+@media screen and (min-width: 992px) {
+  .search-class {
+    width: 20%;
+    padding: 0% 0% 0% 4%;
   }
 }
 .loader__contener {
@@ -568,7 +586,9 @@
 }
 .entree__contener .entree__card .entree__price span {
   transition: all 1.4s ease-in-out;
-  margin: 30% 15% 0% 0%;
+  position: absolute;
+  top: 5px;
+  right: 15px;
 }
 .entree__contener .entree__card:hover .entree__card--content {
   width: 60%;
@@ -585,8 +605,10 @@
 }
 .entree__contener .entree__card:hover .entree__price span {
   width: 20%;
-  margin: 30px 20px 0px 0%;
   transition: all 1.5s ease-in-out;
+  position: absolute;
+  top: 5px;
+  right: 20px;
 }
 
 @media screen and (min-width: 576px) {
@@ -623,7 +645,9 @@
 }
 .plats__contener .plats__card .plats__price span {
   transition: all 1.4s ease-in-out;
-  margin: 30% 15% 0% 0%;
+  position: absolute;
+  top: 5px;
+  right: 15px;
 }
 .plats__contener .plats__card:hover .plats__card--content {
   width: 60%;
@@ -640,8 +664,10 @@
 }
 .plats__contener .plats__card:hover .plats__price span {
   width: 20%;
-  margin: 30px 20px 0px 0%;
   transition: all 1.5s ease-in-out;
+  position: absolute;
+  top: 5px;
+  right: 20px;
 }
 
 @media screen and (min-width: 576px) {
@@ -678,7 +704,9 @@
 }
 .dessert__contener .dessert__card .dessert__price span {
   transition: all 1.4s ease-in-out;
-  margin: 30% 15% 0% 0%;
+  position: absolute;
+  top: 5px;
+  right: 15px;
 }
 .dessert__contener .dessert__card:hover .dessert__card--content {
   width: 60%;
@@ -695,8 +723,10 @@
 }
 .dessert__contener .dessert__card:hover .dessert__price span {
   width: 20%;
-  margin: 30px 20px 0px 0%;
   transition: all 1.5s ease-in-out;
+  position: absolute;
+  top: 5px;
+  right: 20px;
 }
 
 @media screen and (min-width: 576px) {
@@ -727,40 +757,41 @@ footer {
   gap: 400px;
   width: 100%;
 }
-
 footer ul {
   list-style: none;
+}
+footer h3 {
+  margin-left: 10%;
+  margin-top: 0%;
+  font-family: "Shrikhand", sans-serif;
+}
+footer ul {
+  margin: 10% 0% 0% -8%;
+}
+footer li {
+  padding-bottom: 5%;
+}
+footer a {
+  text-decoration: none;
+}
+footer i {
+  margin-right: 5%;
 }
 
 footer, .footer {
   color: white;
 }
 
-footer h3 {
-  margin-left: 10%;
-  font-family: "Shrikhand", sans-serif;
-}
-
-footer ul {
-  margin: 10% 0% 0% -8%;
-}
-
-footer li {
-  padding-bottom: 5%;
-}
-
-footer a {
-  text-decoration: none;
-}
-
-footer i {
-  margin-right: 5%;
-}
-
 footer .fa-handshake-angle {
   width: 7%;
 }
 
+@media screen and (min-width: 992px) {
+  footer {
+    position: relative;
+    top: 300px;
+  }
+}
 @media screen and (max-width: 575px) {
   header {
     display: flex;
@@ -839,17 +870,32 @@ h2, h3, p, a, span {
 .marge {
   margin: 0%;
 }
+.marge .general {
+  position: absolute;
+  width: 100%;
+}
 .marge .general__contener {
   border: 1px solid white;
   border-radius: 25px;
   background-color: white;
-  position: absolute;
   margin-top: -4%;
-  width: 100%;
+  width: 99.5%;
 }
 
+.restaurant-image {
+  position: relative;
+}
 .restaurant-image img {
   width: 100%;
+  height: 240px;
+  margin-top: 3%;
+  margin-bottom: -4%;
+  object-fit: cover;
+}
+
+.restaurant-image-note-enchantee img {
+  width: 100%;
+  height: 240px;
   margin-top: 3%;
   margin-bottom: -4%;
 }
@@ -877,17 +923,30 @@ h2, h3, p, a, span {
     justify-content: center;
     font-size: 30px;
   }
+  .restaurant-image-note-enchantee img {
+    height: 235px;
+  }
 }
 @media screen and (min-width: 992px) {
   .restaurant-image img {
     object-fit: none;
+    max-height: 120%;
+    height: 120%;
+  }
+  .marge {
+    display: flex;
+    flex-direction: column;
   }
   .marge .general {
     display: flex;
     justify-content: center;
+    align-items: end;
   }
   .marge .general__contener {
     width: 70%;
+  }
+  .marge .general__contener .titre {
+    height: 85px;
   }
 }
 

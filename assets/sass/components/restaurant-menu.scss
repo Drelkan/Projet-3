@@ -83,7 +83,13 @@
 
 
 @media screen and (min-width:992px){
+    .menu__contener{
+        margin: 0%
+    }
     .button__commande{
+        .button__contener{
+            margin: 5% 0% 5% 0%;
+        }
         .button{
             width: 40%;
             height: 60px;
@@ -95,4 +101,5 @@
             align-items: center;
         }
     }
+    
 }

@@ -4,33 +4,38 @@ footer{
     padding: 30px 0px 30px 0px;
     gap: 400px;
     width: 100%;
-}
-footer ul{
-    list-style: none;
+    ul{
+        list-style: none;
+    }
+    h3{
+        margin-left: 10%;
+        margin-top: 0%;
+        font-family: "Shrikhand",sans-serif;
+    }
+    ul{
+        margin: 10% 0% 0% -8%;
+    }
+    li{
+        padding-bottom: 5%;
+    }
+    a{
+        text-decoration: none;
+    }
+    i{
+        margin-right: 5%;
+    }
 }
 footer, .footer{
     color: white;
-}
-footer h3{
-    margin-left: 10%;
-    font-family: "Shrikhand",sans-serif;
-}
-footer ul{
-    margin: 10% 0% 0% -8%;
-}
-footer li{
-    padding-bottom: 5%;
-}
-footer a{
-    text-decoration: none;
-}
-footer i{
-    margin-right: 5%;
 }
 footer .fa-handshake-angle{
     width: 7%;
 }
 
 
-@media screen and (min-width:576px){
+@media screen and (min-width:992px){
+    footer{
+        position: relative;
+        top: 300px;
+    }
 }
