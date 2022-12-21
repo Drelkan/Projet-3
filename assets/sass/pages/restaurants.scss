@@ -26,27 +26,20 @@ h2,h3,p,a, span{
     position: relative;
     img{
     width: 100%;
-    height: 240px;
+    height: 220px;
     margin-top: 3%;
     margin-bottom: -4%;
     object-fit: cover;
     }
 }
 
-.restaurant-image-note-enchantee img{
-    width: 100%;
-    height: 240px;
-    margin-top: 3%;
-    margin-bottom: -4%;
-}
 .titre{
     display: flex;
     align-items:center;
     margin-top: 3%;
-    h1{
-           margin-left: 3%;
-    }
 }
+
+
 @keyframes rotate{
     40%{
         transform: rotate(-90deg);
@@ -63,27 +56,30 @@ h2,h3,p,a, span{
         justify-content: center;
         font-size: 30px;
     }
-    .restaurant-image-note-enchantee img{
-        height: 235px;
-    }
 }
 
 
 @media screen and (min-width:992px){
-    .restaurant-image img{
-        object-fit: none;
-        max-height: 120%;
-        height: 120%;
+    .restaurant-image{
+        margin-bottom: -55%;
+        img{
+            object-fit: none;
+            max-height: 200%;
+            height: 200%;
+        }
     }
     .marge{
-        display: flex;
-         flex-direction: column;
         .general{
             display: flex;
             justify-content: center;
-            align-items: end;
+            flex-direction: column;
+            align-items: center;
+            top: 155px;
+            bottom: -740px;
             &__contener{
-                width: 70%;
+                width: 60%;
+                margin-top: 8%;
+                margin-bottom: -9%;
                 .titre{
                     height: 85px;
                 }
