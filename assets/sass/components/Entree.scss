@@ -69,8 +69,9 @@
         .entree__contener{
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
             justify-content: space-around;
+            width: 88%;
+
         }
     }
     .entree__card{

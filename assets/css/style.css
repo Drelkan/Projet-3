@@ -682,8 +682,8 @@
   .entree .entree__contener {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     justify-content: space-around;
+    width: 88%;
   }
   .entree__card {
     width: 45%;
@@ -741,8 +741,8 @@
   .plats .plats__contener {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     justify-content: space-around;
+    width: 88%;
   }
   .plats__card {
     width: 45%;
@@ -800,8 +800,8 @@
   .dessert .dessert__contener {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     justify-content: space-around;
+    width: 88%;
   }
   .dessert__card {
     width: 45%;
