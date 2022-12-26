@@ -3,11 +3,13 @@
     justify-content: center;
     align-items: center;
     height: 40px;
-    border: 1px solid #f2f2f2;
     background-color: #e5e5e6;
     margin-top: 3%;
     gap: 5%;
     padding-left: 20%;
+    border-top: 1px  #CCC solid;
+    box-shadow: 
+        inset 0px 15px 8px -10px #CCC;
     .search{
         background-color: #e5e5e6;
         border: none;
