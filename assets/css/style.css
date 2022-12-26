@@ -165,7 +165,6 @@
 }
 .fonctionnement li:hover {
   background-color: #f4ecfc;
-  border: 2px solid #f4ecfc;
 }
 .fonctionnement li:hover i {
   color: #9356DC;
@@ -219,14 +218,14 @@
   .fonctionnement i:hover {
     color: #9356DC;
   }
-  li:hover {
-    background-color: #f4ecfc;
-    border: 2px solid #f4ecfc;
-  }
-  li:hover i {
-    color: #9356DC;
-  }
 }
+.fonctionnement li:hover {
+  background-color: #f4ecfc;
+}
+.fonctionnement li:hover i {
+  color: #9356DC;
+}
+
 @media screen and (min-width: 992px) {
   .fonctionnement {
     margin-bottom: 5%;
