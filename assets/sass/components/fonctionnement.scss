@@ -38,7 +38,7 @@
     }
         li:hover{
             background-color: #f4ecfc;
-            border-color: 2px solid #f4ecfc;   
+            border: 2px solid #f4ecfc;   
             i{
                 color: $primary-color;
             }     
@@ -96,7 +96,7 @@
     }
             li:hover{
                 background-color: #f4ecfc;
-                border-color: 2px solid #f4ecfc;   
+                border: 2px solid #f4ecfc;   
                 i{
                     color: $primary-color;
                 }     
@@ -109,12 +109,16 @@
         margin-bottom: 5%;
         li{
             width: 25%;
+            margin-top: 2%;
         }
         span{
             margin-left: -24.5%;
         }
         i{
             margin-left: -10%;
+        }
+        h2{
+            margin-top: 2%;
         }
     }
 }
