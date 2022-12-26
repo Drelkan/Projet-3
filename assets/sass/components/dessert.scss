@@ -1,9 +1,9 @@
 .dessert__contener{
     .dessert__card{
+        opacity: 0;
         font-size: 22px;
         position: relative;
         transition: all 2s ease-in-out;
-        animation: appear 2s ease-in-out;
         .check{
             opacity: 0;
             width: 0%;
@@ -22,7 +22,7 @@
                 width: 60%;
             }
             .check{
-                opacity: 100;
+                opacity: 1;
                 width: 17%;
                 i{
                 animation: rotate 1s ease-in-out both; 

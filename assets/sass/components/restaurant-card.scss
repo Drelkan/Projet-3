@@ -119,7 +119,11 @@
 @media screen and (min-width:992px){
     .restaurant{
         margin-bottom: -10%;
+        h2{
+            margin: 3% 0% 3% 5%;
+        }
     }
+
     .restaurants__cards--content{
         display: flex;
         flex-wrap: wrap;
